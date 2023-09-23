@@ -54,9 +54,9 @@ public class ClienteDeEmail
      * @param destinatario O destinatário da mensagem.
      * @param messagem O texto da mensagem a ser enviada.
      */
-    public void enviarEmail(String destinatario, String messagem)
+    public void enviarEmail(String destinatario, String mensagem)
     {
-        Email email = new Email(usuario, destinatario, messagem);
+        Email email = new Email(usuario, destinatario, mensagem);
         servidor.postar(email);
     }
 }

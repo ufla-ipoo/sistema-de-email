@@ -14,20 +14,20 @@ public class Email
     // O destinatário da mensagem
     private String destinatario;
     // O texto da mensagem
-    private String messagem;
+    private String mensagem;
 
     /**
      * Cria uma mensagem de e-mail do remente para o destinário,
      * contendo a mensagem passada.
      * @param remetente O remetente desta mensagem.
      * @param destinatario O destinatário desta mensagem.
-     * @param messagem O texto da mensagem a ser enviada
+     * @param mensagem O texto da mensagem a ser enviada
      */
-    public Email(String remetente, String destinatario, String messagem)
+    public Email(String remetente, String destinatario, String mensagem)
     {
         this.remetente = remetente;
         this.destinatario = destinatario;
-        this.messagem = messagem;
+        this.mensagem = mensagem;
     }
 
     /**
@@ -49,9 +49,9 @@ public class Email
     /**
      * @return O texto da mensagem.
      */
-    public String obterMessagem()
+    public String obterMensagem()
     {
-        return messagem;
+        return mensagem;
     }
 
     /**
@@ -61,6 +61,6 @@ public class Email
     {
         System.out.println("De: " + remetente);
         System.out.println("Para: " + destinatario);
-        System.out.println("Messagem: " + messagem);
+        System.out.println("Messagem: " + mensagem);
     }
 }
